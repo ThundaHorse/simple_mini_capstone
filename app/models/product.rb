@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   validates :name, length: {maximum: 254}
   
   validates :price, presence: true
-  validates :price, numericality: {less_than: 100_000_000, greater_than: 0}
+  # validates :price, numericality: {less_than: 100_000_000, greater_than: 0}
 
   validates :description, presence: true
 
